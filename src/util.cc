@@ -564,7 +564,7 @@ double GetLoadAverage() {
 
   return posix_compatible_load;
 }
-#elif defined(__PASE__)
+#elif defined(__PASE__) || defined (__QNX__)
 double GetLoadAverage() {
   return -0.0f;
 }
